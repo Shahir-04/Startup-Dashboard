@@ -1,6 +1,6 @@
+import matplotlib.pyplot as plt
 import pandas as pd
 import streamlit as st
-import matplotlib.pyplot as plt
 st.set_page_config(layout='wide',page_title='Startup Analysis')
 df=pd.read_csv('C:/Users/shahi/OneDrive/Desktop/Seminar/dashboard_stremlit/cleaned_startup.csv')
 df['Date']=pd.to_datetime(df['Date'],dayfirst=True,errors='coerce')
