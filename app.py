@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import streamlit as st
 st.set_page_config(layout='wide',page_title='Startup Analysis')
-df=pd.read_csv('C:/Users/shahi/OneDrive/Desktop/Seminar/dashboard_stremlit/cleaned_startup.csv')
+df=pd.read_csv('cleaned_startup.csv')
 df['Date']=pd.to_datetime(df['Date'],dayfirst=True,errors='coerce')
 df['month']=df['Date'].dt.month
 df['year']=df['Date'].dt.year
