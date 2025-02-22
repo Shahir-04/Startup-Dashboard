@@ -1,6 +1,5 @@
 import pandas as pd
 import streamlit as st
-import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 st.set_page_config(layout='wide',page_title='Startup Analysis')
 df=pd.read_csv('Final_startup_data.csv')
