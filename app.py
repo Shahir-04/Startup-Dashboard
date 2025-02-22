@@ -3,7 +3,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 st.set_page_config(layout='wide',page_title='Startup Analysis')
-df=pd.read_csv('C:/Users/shahi/OneDrive/Desktop/Seminar/dashboard_stremlit/Final_startup_data.csv')
+df=pd.read_csv('Final_startup_data.csv')
 df['Date']=pd.to_datetime(df['Date'],dayfirst=True,errors='coerce')
 df['month']=df['Date'].dt.month
 df['year']=df['Date'].dt.year
